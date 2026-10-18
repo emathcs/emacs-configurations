@@ -223,6 +223,12 @@
 (setq corfu-auto-delay 0)
 (setq corfu-auto-prefix 1)
 
+(require 'corfu-terminal)
+(unless (display-graphic-p)
+  (progn
+    (require 'corfu-terminal)
+    (corfu-terminal-mode +1)))
+
 (defun my/buffer-token-capf ()
   ;; Complete tokens like site-custom from the current buffer
   (let* ((chars "-A-Za-z0-9_")

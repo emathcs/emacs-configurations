@@ -72,7 +72,11 @@
       (progn
         (message "Laptop")
         ;; Code for Thinkpad X260
-        (add-to-list 'default-frame-alist '(fullscreen . maximized)))
+        (set-frame-position (selected-frame) 0 0)
+        (add-to-list 'default-frame-alist '(width . 89))
+        (add-to-list 'default-frame-alist '(height . 26))
+        (add-to-list 'default-frame-alist '(fullscreen . maximized))
+        (define-key global-map [f10] 'toggle-frame-maximized))
     (message "Monitor")
     ;; 24" monitor
     (set-frame-position (selected-frame) 656 0)

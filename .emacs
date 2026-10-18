@@ -255,6 +255,9 @@
 (define-key corfu-map (kbd "RET") #'corfu-insert)
 (define-key corfu-map (kbd "<return>") #'corfu-insert)
 
+;; Close suggestions
+(define-key corfu-map (kbd "<escape>") #'corfu-quit)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; End of configurations

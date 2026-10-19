@@ -30,9 +30,7 @@
 ;;
 ;; Header line instead tabbar
 ;;
-(set-face-bold 'header-line t)
-(set-face-background 'header-line "#555555")
-(set-face-foreground 'header-line "#ffffff")
+(custom-set-faces '(header-line ((t (:background "#555555" :foreground "#ffffff")))))
 
 ;;
 ;; Save

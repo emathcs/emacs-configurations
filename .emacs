@@ -198,6 +198,8 @@
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.email\\'" . web-mode))
 
+(define-key global-map [f6] 'web-mode)
+
 ;;
 ;; C and C++
 ;;
